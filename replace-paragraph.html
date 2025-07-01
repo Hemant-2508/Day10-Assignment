@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <title>Task 3</title> 
+</head> 
+<body> 
+  <p id="old-paragraph">This paragraph will be replaced.</p> 
+
+  <script >
+    window.addEventListener("DOMContentLoaded", () => {
+    const oldPara = document.getElementById("old-paragraph");
+
+    const newPara = document.createElement("p");
+    newPara.textContent = "This paragraph was replaced!";
+
+    oldPara.replaceWith(newPara);
+  });
+
+  </script> 
+</body> 
+</html>
