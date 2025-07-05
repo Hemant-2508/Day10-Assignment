@@ -3,23 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Features</title>
 </head>
 <body>
+
   <div id="features">
     <p>Fast performance</p>
     <p>User-friendly interface</p>
     <p>Secure transactions</p>
   </div>
-  
+
   <script>
     const features = document.getElementById("features");
     const paragraphs = features.querySelectorAll("p");
-  
+
     paragraphs.forEach(p => {
       p.textContent = `✓ ${p.textContent}`;
     });
   </script>
-  
+
 </body>
 </html>
