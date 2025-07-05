@@ -3,21 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Remove List Item</title>
 </head>
 <body>
+
   <ul id="myList">
     <li>First item</li>
-    <li>Second item</li> <!-- This will be removed -->
+    <li>Second item</li>
     <li>Third item</li>
   </ul>
-  
+
   <script>
     const list = document.getElementById("myList");
-    const secondItem = list.children[1]; // Indexing starts from 0
-    list.removeChild(secondItem);
-    
+    list.removeChild(list.children[1]);
   </script>
-  
+
 </body>
 </html>
